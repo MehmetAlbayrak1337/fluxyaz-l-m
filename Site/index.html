@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux Solutions</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#ff3e3e">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cursor-glow"></div>
+
+    <header class="hero-box">
+        <div class="video-shield">
+            <video autoplay muted loop playsinline>
+                <source src="https://cdn.discordapp.com/attachments/1388835464278179880/1459562015860195388/2026-01-09_23-20-31.mp4?ex=6972e3cd&is=6971924d&hm=d00a4ad594c5427c58f6ee3a2a9a1263288de71a21de20044eec09a559103887&" type="video/mp4">
+            </video>
+        </div>
+        
+        <nav class="top-nav">
+    <div class="logo">FLUX<span>.</span></div>
+    <div class="nav-links">
+        <a href="#showcase">Showcase</a>
+        <a href="#store">Products</a>
+        <a href="#faq">FAQ</a>
+    </div>
+    <div class="status-indicator">
+        <span class="dot"></span>
+        <a href="https://discord.gg/flux" target="_blank">discord.gg/flux</a>
+    </div>
+</nav>
+
+        <div class="hero-inner">
+            <h1 class="split-type">Görünmez<br><span class="accent">Güç.</span></h1>
+            <p class="hero-desc">Standartların ötesinde, tamamen kernel seviyesinde optimize edilmiş private yazılımlar.</p>
+            <div class="action-row">
+                <a href="#store" class="btn-primary">Kataloğu İncele</a>
+                <a href="https://discord.gg/flux" class="btn-link">Discord'a Katıl</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <aside class="news-ticker">
+            <span class="tag">YENI</span>
+            <marquee scrollamount="8">Valorant v4.2 Internal Güncellendi • CS2 Private Slotlar Açıldı • Haftalık İndirimler Discord'da</marquee>
+        </aside>
+
+        <section id="demo" class="content-section">
+            <div class="section-head">
+                <span class="sub">DENEME</span>
+                <h2>Flux <span class="accent">Product</span> Preview</h2>
+            </div>
+
+            <div class="demo-viewport glass">
+                <div class="game-scene">
+                    <div class="target-container" id="esp-target">
+                        <img src="karakter.png" alt="Target" class="character-model">
+                        <div class="esp-box-2d" id="box-2d"></div>
+                        <div class="esp-box-3d" id="box-3d">
+                            <div class="face front"></div><div class="face back"></div>
+                            <div class="face left"></div><div class="face right"></div>
+                        </div>
+                        <div class="esp-corners" id="box-corners">
+                            <div class="c top-l"></div><div class="c top-r"></div>
+                            <div class="c bot-l"></div><div class="c bot-r"></div>
+                        </div>
+                        <div class="esp-name" id="esp-name">Brimstone</div>
+                        <div class="esp-health" id="esp-health-bar"><div class="health-inner"></div></div>
+                    </div>
+                </div>
+
+                <div class="flux-gui draggable">
+                    <div class="gui-header"><span>FLUX <small></small></span></div>
+                    <div class="gui-body">
+                        <div class="gui-tabs">
+                            <button class="tab-btn active">Visuals</button>
+                            <button class="tab-btn">Aimbot</button>
+                            <button class="tab-btn">Misc</button>
+                        </div>
+                        <div class="gui-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<nav class="top-nav">
+    <div class="logo">FLUX<span>.</span></div>
+    <div class="nav-links">
+        <a href="#showcase">Showcase</a>
+        <a href="#store">Products</a>
+        <a href="#faq">FAQ</a>
+    </div>
+    <div class="status-indicator">
+        <span class="dot"></span> <a href="https://discord.gg/flux" target="_blank">discord.gg/flux</a>
+    </div>
+</nav>
+
+<main class="main-content">
+    <section id="showcase" class="content-section">
+        <div class="section-head">
+            <span class="sub">VİDEOLAR</span>
+            <h2>Media <span class="accent">Showcase</span></h2>
+        </div>
+        <div class="showcase-grid" id="render-showcase">
+            </div>
+    </section>
+
+    <section id="store" class="content-section">
+        <div class="section-head">
+            <span class="sub">MAĞAZA</span>
+            <h2>Öne Çıkan Ürünler</h2>
+        </div>
+        <div class="product-grid" id="render-products"></div>
+    </section>
+</main>
+
+
+        <section class="content-section">
+            <div class="features-container">
+                <div class="feature-box">
+                    <div class="box-number">01</div>
+                    <h3>Güvenlik Odağı</h3>
+                    <p>Her build'i kişiye özel şifreleyerek radarlardan kaçıyoruz.</p>
+                    <div class="box-status">KERNEL LEVEL</div>
+                </div>
+                <div class="feature-box">
+                    <div class="box-number">02</div>
+                    <h3>Şeffaf Durum</h3>
+                    <p>Riskli bir durumda anında "detected" işaretleriz.</p>
+                    <div class="box-status">REAL-TIME CHECK</div>
+                </div>
+                <div class="feature-box">
+                    <div class="box-number">03</div>
+                    <h3>Hızlı Destek</h3>
+                    <p>Ticket'larda bizzat geliştiriciler cevap verir.</p>
+                    <div class="box-status">DIRECT ACCESS</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="content-section">
+            <div class="section-head"><h2>Sıkça Sorulanlar</h2></div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question"><span>Flux</span><i class="fa-solid fa-plus"></i></div>
+                    <div class="faq-answer"><p>Win 10 ve 11 tüm sürümleri destekler.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>Windows sürümleri uyumlu mu?</span><i class="fa-solid fa-plus"></i></div>
+                    <div class="faq-answer"><p>Win 10 ve 11 tüm sürümleri destekler.</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<nav class="dock">
+    <a href="#" class="dock-item active" data-name="HOME">
+        <i class="fa-solid fa-house-chimney"></i>
+    </a>
+    <a href="#showcase" class="dock-item" data-name="SHOWCASE">
+        <i class="fa-solid fa-clapperboard"></i>
+    </a>
+    <a href="#store" class="dock-item" data-name="STORE">
+        <i class="fa-solid fa-box-open"></i>
+    </a>
+    <a href="#faq" class="dock-item" data-name="FAQ">
+        <i class="fa-solid fa-circle-question"></i>
+    </a>
+</nav>
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <div class="logo">FLUX<span>.</span></div>
+            <p>Standartların ötesinde, kernel seviyesinde performans ve güvenlik.</p>
+            
+            <div class="footer-refs">
+                <span class="ref-title">REFERANSLAR</span>
+                <a href="https://cheatglobal.com" target="_blank" class="ref-link">CheatGlobal</a>
+            </div>
+        </div>
+        
+        <div class="footer-socials">
+            <a href="https://discord.gg/jmEf6QPYGb" target="_blank" class="social-icon" title="Discord">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            <a href="https://www.youtube.com/@fluxyazilim" target="_blank" class="social-icon" title="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/fluxyazilim/" target="_blank" class="social-icon" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Flux Solutions. Tüm hakları saklıdır.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
